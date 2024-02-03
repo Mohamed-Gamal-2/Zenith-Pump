@@ -14,7 +14,7 @@ export default function LandingPage() {
 
   return (
     <>
-      <section className="relative">
+      <section className={`relative ${styles.section}`}>
         {/*---------------- absoulte Part ----------------- */}
         <div className={`absolute ${styles.topLeftCorner}`}></div>
         <div className={`absolute ${styles.bottomRightCorner}`}></div>

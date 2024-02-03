@@ -5,7 +5,8 @@
 :root {
   --color-primary: #ec3642;
   --color-bg-one: #333;
-  --color-white: hwb(0 100% 0%);
+  --color-bg-two: #222;
+  --color-white: #fff;
   --color-black: #000;
 }
 
@@ -16,6 +17,5 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: var(--color-bg-one);
-  height: 200vh;
+  color: var(--color-white);
 }

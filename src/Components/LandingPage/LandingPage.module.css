@@ -1,3 +1,7 @@
+.section {
+  background-color: var(--color-bg-one);
+}
+
 .landing {
   background-image: linear-gradient(
       0,
@@ -101,7 +105,7 @@
 }
 
 .moto2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 200;
 }
 
