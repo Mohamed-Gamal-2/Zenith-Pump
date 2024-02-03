@@ -1,0 +1,96 @@
+.nav {
+  left: 10%;
+  z-index: 9999;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-primary);
+}
+
+.icon {
+  animation-name: beatingHeart;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes beatingHeart {
+  0%,
+  40%,
+  80%,
+  100% {
+    transform: scale(1.1);
+  }
+  20%,
+  60% {
+    transform: scale(0.75);
+  }
+}
+
+.nav li {
+  transition: all 0.5s;
+  position: relative;
+}
+
+.nav li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.1rem;
+  bottom: -4px;
+  z-index: 999;
+  background-color: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: all 0.5s;
+}
+
+.nav li:hover {
+  color: var(--color-primary);
+}
+
+.nav li:hover::before {
+  transform: scaleX(1);
+}
+
+.menuIcons {
+  color: var(--color-white);
+}
+
+.menuIcons:hover {
+  color: var(--color-primary);
+}
+
+.smallMenu {
+  right: 0%;
+  z-index: 9999;
+  height: 80vh;
+  width: 100%;
+  border-width: 0px 1px 1px 1px;
+  border-color: var(--color-primary);
+  border-style: solid;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0 0 20px 20px;
+  opacity: 0;
+  transform: translateY(-900px);
+  transition: opacity 0.7s, transform 1.2s;
+}
+.smallMenuOpen {
+  opacity: 1;
+  transform: translateY(0);
+}
+.smallMenu::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 35px;
+  top: -25px;
+  left: -0.5px;
+  background-color: var(--color-primary);
+}
+.smallMenu::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 35px;
+  top: -25px;
+  right: -1px;
+  background-color: var(--color-primary);
+}

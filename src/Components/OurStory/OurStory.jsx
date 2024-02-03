@@ -25,13 +25,13 @@ const cardData = [
 
 export default function OurStory() {
   return (
-    <section className={`${styles.section} relative`}>
+    <section id="about" className={`${styles.section} relative`}>
       {/*---------------- absoulte Part ----------------- */}
       <div className={`absolute ${styles.topRightCorner}`}></div>
 
       {/*---------------- ourstory Part ----------------- */}
-      <div>
-        <div className="container mx-auto py-6 flex justify-between items-center flex-wrap">
+      <div className={styles.sectionContainer}>
+        <div className="container mx-auto py-32 flex justify-between items-center flex-wrap">
           <div className="relative md:w-1/2">
             <img
               src="./assests/dot-bg.png"

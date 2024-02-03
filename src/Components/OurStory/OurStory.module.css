@@ -2,12 +2,14 @@
   background-color: var(--color-bg-one);
 }
 
-.section div:nth-child(2) {
+.sectionContainer {
   background-color: var(--color-bg-two);
+  position: relative;
+  z-index: 10;
 }
 
 @media (min-width: 500px) {
-  .section div:nth-child(2) {
+  .sectionContainer {
     clip-path: polygon(0% 0%, 80% 0%, 100% 20%, 100% 100%, 0% 100%);
   }
 
@@ -31,4 +33,5 @@
 
 .image {
   width: 70%;
+  min-width: 200px;
 }
