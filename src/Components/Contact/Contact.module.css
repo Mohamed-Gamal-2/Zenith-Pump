@@ -1,0 +1,41 @@
+.default {
+  opacity: 0;
+  height: 100px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: 10px;
+  z-index: 999;
+  border: 1px var(--color-primary) solid;
+  border-radius: 1rem;
+  transform: translateX(-100px);
+  backdrop-filter: blur(10px);
+  transition: opacity 1.5s, transform 0.7s;
+}
+
+.open {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.contactInfo {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  padding: 0.3rem;
+  transition: all 1s;
+}
+
+.contactInfo a {
+  color: var(--color-white);
+}
+
+.contactInfo:hover {
+  background-color: var(--color-white);
+}
+.contactInfo:hover a {
+  color: var(--color-primary);
+}
