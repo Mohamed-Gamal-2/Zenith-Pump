@@ -3,6 +3,7 @@ import Classes from "./Components/Classes/Classes";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import Navbar from "./Components/Navbar/Navbar";
 import OurStory from "./Components/OurStory/OurStory";
+import Trainers from "./Components/Trainers/Trainers";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <LandingPage />
       <OurStory />
       <Classes />
+      <Trainers />
     </>
   );
 }
