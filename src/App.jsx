@@ -1,5 +1,6 @@
 import "./App.css";
 import Classes from "./Components/Classes/Classes";
+import GymFacts from "./Components/GymFacts/GymFacts";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import Navbar from "./Components/Navbar/Navbar";
 import OurStory from "./Components/OurStory/OurStory";
@@ -17,6 +18,7 @@ function App() {
       <Trainers />
       <Pricing />
       <Testimonials />
+      <GymFacts />
     </>
   );
 }
