@@ -1,0 +1,29 @@
+.section {
+  background-color: var(--color-bg-one);
+  /* clip-path: ellipse(100% 55% at 40% 44%); */
+}
+
+.testimonials {
+  height: 85vh;
+  background-image: linear-gradient(
+      0,
+      rgba(0, 0, 0, 0.5),
+      100%,
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../../../public/assests/testimonials-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  clip-path: ellipse(100% 55% at 60% 56%);
+}
+
+.icon:hover {
+  cursor: pointer;
+  transition: all 0.7s;
+}
+.icon:hover {
+  color: var(--color-primary);
+  transform: scale(1.2);
+}
