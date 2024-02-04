@@ -1,0 +1,93 @@
+@keyframes hop {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-15px);
+  }
+
+  75% {
+    transform: translateY(15px);
+  }
+}
+
+.plan,
+.selected {
+  width: 80%;
+  min-height: 500px;
+  border-radius: 1rem;
+  min-width: 300px;
+  max-width: 450px;
+  cursor: pointer;
+}
+
+.plan:hover,
+.selected:hover {
+  animation-name: hop;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.plan {
+  background-color: var(--color-bg-two);
+}
+
+.selected {
+  background-color: var(--color-primary);
+}
+
+.header,
+.selectedHeader {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.header {
+  color: var(--color-primary);
+}
+
+.selectedHeader {
+  color: var(--color-white);
+}
+
+.priceContainer,
+.selectedPriceContainer {
+  color: var(--color-white);
+  padding: 1.5rem 0;
+}
+.priceContainer {
+  background-color: var(--color-black);
+}
+.selectedPriceContainer {
+  background-color: rgb(210, 57, 67);
+}
+
+.price {
+  font-size: 3.5rem;
+}
+
+.symbol {
+  font-size: 1.6rem;
+}
+
+.endline {
+  height: 2px;
+  background-color: var(--color-white);
+  width: 85%;
+  margin: 10px auto 0;
+}
+
+.keyFeatures,
+.selectedKeyFeatures {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.keyFeatures {
+  color: var(--color-primary);
+}
+.selectedKeyFeatures {
+  color: var(--color-white);
+}
