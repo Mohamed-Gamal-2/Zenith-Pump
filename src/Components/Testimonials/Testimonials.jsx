@@ -47,7 +47,7 @@ export default function Testimonials() {
   }
 
   return (
-    <section className={`w-full ${styles.section} overflow-hidden`}>
+    <section className={`${styles.section} overflow-hidden`}>
       <div className={`${styles.testimonials}`}>
         <h2 className="text-center pt-32 text-5xl uppercase">Testimonials</h2>
         <div className="relative mt-16 flex items">
