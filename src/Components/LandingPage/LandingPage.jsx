@@ -46,7 +46,7 @@ export default function LandingPage() {
               Athlete fitness club
             </h2>
             <p className={`uppercase ${styles.moto1}`}>train the </p>
-            <p className={`capitalize ${styles.moto2}`}>figher in you</p>
+            <p className={`capitalize ${styles.moto2}`}>fighter in you</p>
             <p className="text-white text-center p-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eaque
               nobis deleniti nulla. Et non vitae possimus nesciunt corporis
