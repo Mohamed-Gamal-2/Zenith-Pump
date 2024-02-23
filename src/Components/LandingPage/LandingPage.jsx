@@ -12,6 +12,10 @@ export default function LandingPage() {
     SetIsContctOpen(false);
   }
 
+  function bookFreeClass() {
+    document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <>
       <section id="landing-page" className={`relative ${styles.section}`}>
@@ -49,7 +53,10 @@ export default function LandingPage() {
               cupiditate impedit cumque nostrum repellat neque architecto eum
               asperiores placeat dicta porro perspiciatis sit suscipit.
             </p>
-            <button className={`rounded-lg ${styles.btn} px-3 py-1 uppercase`}>
+            <button
+              className={`rounded-lg ${styles.btn} px-3 py-1 uppercase`}
+              onClick={bookFreeClass}
+            >
               Try a free class
             </button>
           </div>

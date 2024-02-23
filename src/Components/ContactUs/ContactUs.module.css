@@ -1,0 +1,42 @@
+.sectionContainer {
+  background-color: var(--color-bg-one);
+  position: relative;
+  z-index: 10;
+}
+
+.header {
+  font-size: 3rem;
+  margin: auto;
+  text-align: center;
+}
+
+.header span {
+  border-bottom: 4px solid var(--color-primary);
+}
+
+.input {
+  background-color: var(--color-bg-two);
+  padding: 10px 20px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.form {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transition: all 0.7s;
+}
+
+.btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  transform: scale(1.1);
+}

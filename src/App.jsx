@@ -1,5 +1,6 @@
 import "./App.css";
 import Classes from "./Components/Classes/Classes";
+import ContactUs from "./Components/ContactUs/ContactUs";
 import GymFacts from "./Components/GymFacts/GymFacts";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import Motivation from "./Components/Motivation/Motivation";
@@ -21,6 +22,7 @@ function App() {
       <Testimonials />
       <GymFacts />
       <Motivation />
+      <ContactUs />
     </>
   );
 }
